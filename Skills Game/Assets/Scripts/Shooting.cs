@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public AudioSource gun_shot;
+    //public AudioSource gun_shot;
     public float volume = 0.5f;
     public int ammo = 10;
     public int current_ammo = 10;
@@ -20,7 +20,7 @@ public class Shooting : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, fire_point.position, fire_point.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.AddForce(fire_point.up * bullet_force, ForceMode.Impulse);
+        rb.AddForce(fire_point.forward * bullet_force, ForceMode.Impulse);
     }
     IEnumerator reload()
     {
@@ -40,7 +40,7 @@ public class Shooting : MonoBehaviour
             if (current_ammo > 0)
             {
                 current_ammo -= 1;
-                gun_shot.PlayOneShot(gun_shot.clip, volume);
+                //gun_shot.PlayOneShot(gun_shot.clip, volume);
                 fire();
             }
         }
