@@ -5,9 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public GameObject enemy;
-    public float waittime = 5f;
-    public float mintime = 1f;
-    public float roundSpeed = .1f;
+    public float waittime = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +28,6 @@ public class EnemyManager : MonoBehaviour
                 Instantiate(enemy, enemySpawn, Quaternion.identity);
             }
             Debug.Log("spawn!");
-            //Instantiate(enemy, enemySpawn, Quaternion.identity);
             yield return new WaitForSeconds(waittime);
         }
     }

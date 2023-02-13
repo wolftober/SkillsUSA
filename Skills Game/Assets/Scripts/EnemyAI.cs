@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     private Transform player;
     private float dist;
-    public float moveSpeed;
+    public float moveSpeed = 3;
 
 
 
