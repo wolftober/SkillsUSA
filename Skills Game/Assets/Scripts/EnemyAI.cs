@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
     private Transform player;
     private float dist;
     public float moveSpeed;
-    private Transform bullet;
 
 
 
@@ -16,7 +15,6 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
-        bullet = GameObject.FindWithTag("Bullet").transform;
     }
 
     // Update is called once per frame
