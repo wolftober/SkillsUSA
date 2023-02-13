@@ -1087,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 133.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963194225
@@ -2669,6 +2669,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 1387147281555470446, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: speed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1387147281555470455, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2752,7 +2756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1941469626130535421, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}

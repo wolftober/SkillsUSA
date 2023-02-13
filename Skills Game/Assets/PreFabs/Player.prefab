@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2214b8885270b24580730da029d2b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.25
 --- !u!114 &1387147281555470441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   timeText: {fileID: 0}
   gameoverText: {fileID: 0}
   playAgain: {fileID: 0}
+  returnToMenu: {fileID: 0}
 --- !u!1 &1387147281786334977
 GameObject:
   m_ObjectHideFlags: 0

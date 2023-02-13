@@ -22,16 +22,11 @@ public class EnemyAI : MonoBehaviour
     {
         dist = Vector3.Distance(player.position, transform.position);
         transform.LookAt(player);
-        GetComponent<Rigidbody>().AddForce(transform.forward * moveSpeed);
-
-        //for melee
-        if(dist <= 2){
-            //do damage
-        }
+        GetComponent<Rigidbody>().AddForce(transform.forward * moveSpeed );
     }
      //DIE!
-        private void OnCollisionEnter(Collision collision){
-            if(collision.gameObject.CompareTag("Bullet"))
-                Destroy(gameObject);
-        }
+    private void OnCollisionEnter(Collision collision){
+        if(collision.gameObject.CompareTag("Bullet"))
+            Destroy(gameObject);
+    }
 }
