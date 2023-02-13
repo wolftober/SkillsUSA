@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
     }
      //DIE!
         private void OnCollisionEnter(Collision collision){
-            if(GameObject.FindWithTag("Bullet"))
-                Destroy(this.gameObject);
+            if(collision.gameObject.CompareTag("Bullet"))
+                Destroy(gameObject);
         }
 }
