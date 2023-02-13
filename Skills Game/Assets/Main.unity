@@ -2431,10 +2431,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1387147281555470455, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720763771128286143, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: timeText
       value: 
       objectReference: {fileID: 1537097367}
+    - target: {fileID: 2720763771128286143, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: playAgain
+      value: 
+      objectReference: {fileID: 1844826631}
+    - target: {fileID: 2720763771128286143, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: gameoverText
+      value: 
+      objectReference: {fileID: 1354855076}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
 --- !u!1001 &1941469627396998612
