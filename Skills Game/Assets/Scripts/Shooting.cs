@@ -39,7 +39,7 @@ public class Shooting : MonoBehaviour
         {
             if (current_ammo > 0)
             {
-                current_ammo -= 1;
+                //current_ammo -= 1;
                 //gun_shot.PlayOneShot(gun_shot.clip, volume);
                 fire();
             }
