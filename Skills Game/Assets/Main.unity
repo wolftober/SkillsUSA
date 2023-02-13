@@ -1879,6 +1879,7 @@ MonoBehaviour:
   gameOverText: {fileID: 1354855076}
   playAgainButton: {fileID: 1844826631}
   timeText: {fileID: 1537097367}
+  EnemySpawn: {fileID: 1285825527}
 --- !u!1001 &1953469821
 PrefabInstance:
   m_ObjectHideFlags: 0

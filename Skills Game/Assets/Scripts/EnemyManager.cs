@@ -14,6 +14,11 @@ public class EnemyManager : MonoBehaviour
         StartCoroutine(Enemyspawn());
     }
 
+    public void starting()
+    {
+        StartCoroutine(Enemyspawn());
+    }
+
     IEnumerator Enemyspawn(){
         while(true){
             Vector3 enemySpawn = new Vector3(Random.Range(-16f,16f), 0, Random.Range(-24f, 20f));

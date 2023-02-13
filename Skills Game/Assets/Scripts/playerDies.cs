@@ -21,6 +21,7 @@ public class playerDies : MonoBehaviour
 
 
             // deleting all enemies
+
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach(GameObject enemy in enemies)
             {

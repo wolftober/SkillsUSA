@@ -11,6 +11,7 @@ public class playAgain : MonoBehaviour
     public TMP_Text gameOverText;
     public GameObject playAgainButton;
     public TMP_Text timeText;
+    public GameObject EnemySpawn;
 
     void Start()
     {
@@ -30,6 +31,6 @@ public class playAgain : MonoBehaviour
         timeText.GetComponent<Score>().track = true;
 
         // ========= Start Spawning ==========
-
+        EnemySpawn.GetComponent<EnemyManager>().starting();
     }
 }
