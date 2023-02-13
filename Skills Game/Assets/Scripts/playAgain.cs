@@ -12,6 +12,7 @@ public class playAgain : MonoBehaviour
     public GameObject playAgainButton;
     public TMP_Text timeText;
     public GameObject EnemySpawn;
+    public GameObject returnToMenu;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class playAgain : MonoBehaviour
         player.transform.position = new Vector3(0, 1.13f, 0);
         gameOverText.text = "";
         playAgainButton.SetActive(false);
+        returnToMenu.SetActive(false);
 
         // restart the clock
         timeText.text = "0";

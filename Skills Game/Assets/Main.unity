@@ -738,7 +738,6 @@ GameObject:
   - component: {fileID: 830616654}
   - component: {fileID: 830616653}
   - component: {fileID: 830616652}
-  - component: {fileID: 830616651}
   - component: {fileID: 830616655}
   m_Layer: 5
   m_Name: returnToMenu
@@ -768,24 +767,6 @@ RectTransform:
   m_AnchoredPosition: {x: 12, y: 112}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &830616651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830616649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96d74eac3c8a0e459457fbae5ef86d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 830616652}
-  player: {fileID: 87703977}
-  gameOverText: {fileID: 1354855076}
-  playAgainButton: {fileID: 830616649}
-  timeText: {fileID: 1537097367}
-  EnemySpawn: {fileID: 281828153}
 --- !u!114 &830616652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,7 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470c39d4fb2e19f46aa7456cc9d9fc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 830616652}
 --- !u!1 &918124947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2109,7 @@ MonoBehaviour:
   playAgainButton: {fileID: 1844826631}
   timeText: {fileID: 1537097367}
   EnemySpawn: {fileID: 281828153}
+  returnToMenu: {fileID: 830616649}
 --- !u!1001 &1953469821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2260,6 +2242,10 @@ PrefabInstance:
       propertyPath: gameoverText
       value: 
       objectReference: {fileID: 1354855076}
+    - target: {fileID: 2720763771128286143, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: returnToMenu
+      value: 
+      objectReference: {fileID: 830616649}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
 --- !u!1001 &1941469627396998612

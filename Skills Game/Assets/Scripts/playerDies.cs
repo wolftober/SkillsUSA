@@ -8,6 +8,7 @@ public class playerDies : MonoBehaviour
     public TMP_Text timeText;
     public TMP_Text gameoverText;
     public GameObject playAgain;
+    public GameObject returnToMenu;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -38,6 +39,9 @@ public class playerDies : MonoBehaviour
 
             // turning on the play again button
             playAgain.SetActive(true);
+
+            // turning on the return to menu button
+            returnToMenu.SetActive(true);
 
         }
     }
