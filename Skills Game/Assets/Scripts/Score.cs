@@ -12,7 +12,10 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeText.text = "" + (int) currentTime;
-        currentTime += 1f * Time.deltaTime;
+        if (track)
+        {
+            timeText.text = "" + (int)currentTime;
+            currentTime += 1f * Time.deltaTime;
+        }
     }
 }
