@@ -13,9 +13,19 @@ public class playerDies : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
 
             // game over / reset
+
+            // ========== Stop Spawning ==========
+
+
+            // deleting all enemies
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach(GameObject enemy in enemies)
+            {
+                GameObject.Destroy(enemy);
+            }
 
             // stopping time and getting the end score
             timeText.GetComponent<Score>().track = false;
@@ -27,6 +37,7 @@ public class playerDies : MonoBehaviour
 
             // turning on the play again button
             playAgain.SetActive(true);
+
         }
     }
 
