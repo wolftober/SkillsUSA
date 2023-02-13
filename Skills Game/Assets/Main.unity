@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &87703977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1387147281555470455, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+  m_PrefabInstance: {fileID: 1387147281886384058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &212305862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1751,7 @@ GameObject:
   - component: {fileID: 1844826635}
   - component: {fileID: 1844826634}
   - component: {fileID: 1844826633}
+  - component: {fileID: 1844826636}
   m_Layer: 5
   m_Name: PlayAgainButton
   m_TagString: Untagged
@@ -1856,6 +1862,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844826631}
   m_CullTransparentMesh: 1
+--- !u!114 &1844826636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844826631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96d74eac3c8a0e459457fbae5ef86d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1844826633}
+  player: {fileID: 87703977}
+  gameOverText: {fileID: 1354855076}
+  playAgainButton: {fileID: 1844826631}
+  timeText: {fileID: 1537097367}
 --- !u!1001 &1953469821
 PrefabInstance:
   m_ObjectHideFlags: 0
