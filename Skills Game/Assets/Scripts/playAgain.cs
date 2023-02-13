@@ -22,6 +22,7 @@ public class playAgain : MonoBehaviour
     void OnClick()
     {
         player.SetActive(true);
+        player.transform.position = new Vector3(0, 1.13f, 0);
         gameOverText.text = "";
         playAgainButton.SetActive(false);
 
