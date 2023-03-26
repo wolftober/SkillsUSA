@@ -9,8 +9,6 @@ public class EnemyAI : MonoBehaviour
     private float dist;
     public float moveSpeed = 3;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
