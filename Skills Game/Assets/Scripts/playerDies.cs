@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class playerDies : MonoBehaviour
 {
@@ -16,8 +17,6 @@ public class playerDies : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            //float damage_to_take = collision.gameObject.GetComponent<V
-
             // damage player
             healthbar.GetComponent<Slider>().value -= 10;
 
