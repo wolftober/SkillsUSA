@@ -1911,6 +1911,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354855074}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!4 &1385722794 stripped
 Transform:
@@ -2054,6 +2055,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1377450774}
   m_CullTransparentMesh: 1
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of c269020 (equip script)
 --- !u!1 &1399854404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,6 +3031,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &2000179136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1387147281786334977, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
@@ -3088,6 +3092,8 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 1387147281786334983, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
   m_PrefabInstance: {fileID: 1387147281886384058}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of c269020 (equip script)
 --- !u!1001 &1387147281886384058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3154,10 +3160,6 @@ PrefabInstance:
     - target: {fileID: 1387147281555470455, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1990660557379393449, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2720763771128286143, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: timeText
