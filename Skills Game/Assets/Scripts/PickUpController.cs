@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpController : MonoBehaviour
 {
    public Shooting gunScript;
+   public Shooting pistol;
    public Rigidbody rb;
    public BoxCollider coll;
    public Transform player, gunContainer;
@@ -17,7 +18,6 @@ public class PickUpController : MonoBehaviour
    public static bool slotFull;
 
    private void Start(){
-        ammo = gunScript.GetComponent<Shooting>().current_ammo;
         //setup
         if(!equipped){
             gunScript.enabled = false;
@@ -33,6 +33,7 @@ public class PickUpController : MonoBehaviour
    }
 
     private void Update(){
+        ammo = gunScript.GetComponent<Shooting>().current_ammo;
         //Check if player is in range and "E" is pressed
         Vector3 distanceTopPlayer = player.position - transform.position;
         if(!equipped && distanceTopPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
@@ -56,6 +57,7 @@ public class PickUpController : MonoBehaviour
 
         //enable Script
         gunScript.enabled = true;
+        pistol.enabled = false;
    }
 
    private void Drop(){
@@ -81,5 +83,6 @@ public class PickUpController : MonoBehaviour
 
         //disable Script
         gunScript.enabled = false;
+        pistol.enabled = true;
    }
 }
