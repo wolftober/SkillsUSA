@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -324,7 +324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848720035}
   m_LocalRotation: {x: 0.317797, y: -0, z: -0, w: 0.9481588}
-  m_LocalPosition: {x: 0.4353789, y: 5.5, z: -4.746571}
+  m_LocalPosition: {x: 0.4353789, y: 11.88, z: -11.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -460,11 +460,11 @@ GameObject:
   - component: {fileID: 1472123361}
   - component: {fileID: 1472123360}
   - component: {fileID: 1472123359}
-  - component: {fileID: 1472123358}
+  - component: {fileID: 1472123363}
   - component: {fileID: 1472123357}
   - component: {fileID: 1472123356}
   m_Layer: 12
-  m_Name: Pistol
+  m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e50146566219f4f99bb9fa753bfc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunScript: {fileID: 1472123358}
+  gunScript: {fileID: 0}
   rb: {fileID: 1472123356}
   coll: {fileID: 1472123359}
   gunContainer: {fileID: 998846267}
@@ -507,25 +507,6 @@ MonoBehaviour:
   dropUpwardForce: 7
   despawnTime: 5
   equipped: 0
---- !u!114 &1472123358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472123355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240013a53b6905c4c80aa7ae3bfeb659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: 0.5
-  ammo: 10
-  current_ammo: 10
-  reload_time: 2
-  fire_point: {fileID: 1733029088}
-  bulletPrefab: {fileID: 4618473173147063516, guid: 6fad71f4c39535f45ac0190865274692, type: 3}
-  bullet_force: 40
 --- !u!65 &1472123359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -604,6 +585,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472123363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472123355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29ae5674d87b924bb0df2f9b491f950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0.5
+  ammo: 21
+  current_ammo: 21
+  burstTime: 0.5
+  fire_point: {fileID: 1733029088}
+  bulletPrefab: {fileID: 4618473173147063516, guid: 6fad71f4c39535f45ac0190865274692, type: 3}
+  bullet_force: 20
 --- !u!4 &1733029088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1387147281546521495, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
@@ -671,6 +671,14 @@ PrefabInstance:
     - target: {fileID: 1387147281786334983, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387147281786335098, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: ammo
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387147281786335098, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: current_ammo
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2229501184434356285, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_LocalScale.x

@@ -8,8 +8,10 @@ public class Shooting : MonoBehaviour
     public float volume = 0.5f;
     public int ammo = 10;
     public int current_ammo = 10;
-    public int reload_time = 2;
+    public float reload_time = 2f;
+    public float shootingSpeed = 1f;
     bool isReloading = false;
+    bool shot = false;
 
     public Transform fire_point;
     public GameObject bulletPrefab;
@@ -29,10 +31,17 @@ public class Shooting : MonoBehaviour
         current_ammo = ammo;
         isReloading = false;
     }
+    IEnumerator fireRate()
+    {
+        
+        shot = true;
+        yield return new WaitForSeconds(shootingSpeed);
+        shot = false;
+    }
 
     void Update()
     {
-        if (isReloading)
+        if (isReloading || shot)
             return;
 
         if (Input.GetMouseButtonDown(0))
@@ -42,6 +51,7 @@ public class Shooting : MonoBehaviour
                 current_ammo -= 1;
                 //gun_shot.PlayOneShot(gun_shot.clip, volume);
                 fire();
+                StartCoroutine(fireRate());
             }
         }
         if (current_ammo == 0)

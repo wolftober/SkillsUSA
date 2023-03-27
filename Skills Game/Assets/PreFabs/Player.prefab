@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 1387147281555470446}
   - component: {fileID: 1387147281555470441}
   - component: {fileID: 2720763771128286143}
+  - component: {fileID: 6908182239807882790}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -195,6 +196,19 @@ MonoBehaviour:
   playAgain: {fileID: 0}
   returnToMenu: {fileID: 0}
   healthbar: {fileID: 0}
+--- !u!114 &6908182239807882790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387147281555470455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69cc239879e7f94c9a883bdbeac809b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistol: {fileID: 1387147281786334977}
 --- !u!1 &1387147281786334977
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,19 +335,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387147281786334977}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81e50146566219f4f99bb9fa753bfc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunScript: {fileID: 0}
-  rb: {fileID: 0}
-  coll: {fileID: 0}
+  gunScript: {fileID: 1387147281786335098}
+  rb: {fileID: 7541574035357788860}
+  coll: {fileID: 1387147281786334983}
   gunContainer: {fileID: 2229501184434356285}
-  pickUpRange: 0
-  dropForwardForce: 0
-  dropUpwardForce: 0
-  ammo: 0
+  pickUpRange: 3
+  dropForwardForce: 10
+  dropUpwardForce: 7
+  despawnTime: 5
   equipped: 0
 --- !u!54 &7541574035357788860
 Rigidbody:
