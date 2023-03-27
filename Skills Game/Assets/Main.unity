@@ -3049,8 +3049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e50146566219f4f99bb9fa753bfc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunScript: {fileID: 0}
-  pistol: {fileID: 2000179140}
+  gunScript: {fileID: 2000179140}
   rb: {fileID: 2000179139}
   coll: {fileID: 2000179141}
   player: {fileID: 331331538}
