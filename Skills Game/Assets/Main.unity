@@ -1781,13 +1781,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354855074}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
---- !u!4 &1385722794 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1990660557379393449, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
-  m_PrefabInstance: {fileID: 1387147281886384058}
-  m_PrefabAsset: {fileID: 0}
-=======
 --- !u!1 &1377450774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +1916,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377450774}
   m_CullTransparentMesh: 1
->>>>>>> Stashed changes
 --- !u!1 &1399854404
 GameObject:
   m_ObjectHideFlags: 0
