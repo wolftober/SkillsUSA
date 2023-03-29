@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUpController : MonoBehaviour
 {
-   public Shooting gunScript;
+   public GenericShoot gunScript;
    public Rigidbody rb;
    public BoxCollider coll;
    public Transform gunContainer;
@@ -47,6 +47,10 @@ public class PickUpController : MonoBehaviour
 
         //Drop if ammo = 0
         if(equipped && gunScript.current_ammo == 0) Drop();
+
+     //    if(equipped && Input.GetMouseButtonDown(0)){
+     //      gunScript.fire();
+     //    }
     }
    private void PickUp(){
         equipped = true;

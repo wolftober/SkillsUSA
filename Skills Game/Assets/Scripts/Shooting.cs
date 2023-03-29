@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class Shooting : GenericShoot
 {
     //public AudioSource gun_shot;
     public float volume = 0.5f;
     public int ammo = 10;
-    public int current_ammo = 10;
     public float reload_time = 2f;
     public float shootingSpeed = 1f;
     bool isReloading = false;
@@ -18,7 +17,11 @@ public class Shooting : MonoBehaviour
 
     public float bullet_force = 20f;
 
-    void fire()
+    void Start(){
+        current_ammo = ammo;
+    }
+
+    public override void fire()
     {
         GameObject bullet = Instantiate(bulletPrefab, fire_point.position, fire_point.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
@@ -33,7 +36,6 @@ public class Shooting : MonoBehaviour
     }
     IEnumerator fireRate()
     {
-        
         shot = true;
         yield return new WaitForSeconds(shootingSpeed);
         shot = false;

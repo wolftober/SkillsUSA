@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour
     public GameObject enemy;
     public float waittime = 1f;
     // Start is called before the first frame update
+    public List <GameObject> spawnTable = new List<GameObject>();
     void Start()
     {
         StartCoroutine(Enemyspawn());
@@ -30,7 +31,9 @@ public class EnemyManager : MonoBehaviour
                 continue;
             }
             else{
-                Instantiate(enemy, enemySpawn, Quaternion.identity);
+                int item = Random.Range(0,spawnTable.Count);
+                GameObject spawn =  spawnTable[item];
+                Instantiate(spawn, enemySpawn, Quaternion.identity);
             }
             Debug.Log("spawn!");
             yield return new WaitForSeconds(waittime);
