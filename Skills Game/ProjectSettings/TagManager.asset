@@ -9,6 +9,7 @@ TagManager:
   - FiringP
   - GunContainer
   - Crate
+  - wall
   layers:
   - Default
   - TransparentFX
