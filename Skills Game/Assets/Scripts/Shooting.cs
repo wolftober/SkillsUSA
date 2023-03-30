@@ -43,6 +43,10 @@ public class Shooting : GenericShoot
 
     void Update()
     {
+        if (current_ammo == 0)
+        {
+            StartCoroutine(reload());
+        }
         if (isReloading || shot)
             return;
 
@@ -55,10 +59,6 @@ public class Shooting : GenericShoot
                 fire();
                 StartCoroutine(fireRate());
             }
-        }
-        if (current_ammo == 0)
-        {
-            StartCoroutine(reload());
         }
     }
 }
