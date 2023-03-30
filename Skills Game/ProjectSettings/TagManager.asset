@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - FiringP
   - GunContainer
+  - Crate
   layers:
   - Default
   - TransparentFX

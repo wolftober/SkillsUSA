@@ -37,6 +37,12 @@ public class playerDies : MonoBehaviour
                     GameObject.Destroy(enemy);
                 }
 
+                GameObject[] crates = GameObject.FindGameObjectsWithTag("Crate");
+                foreach (GameObject crate in crates)
+                {
+                    GameObject.Destroy(crate);
+                }
+
                 // stopping time and getting the end score
                 timeText.GetComponent<Score>().track = false;
 
