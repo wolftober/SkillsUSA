@@ -75,8 +75,9 @@ public class PickUpController : MonoBehaviour
         gunScript.gameObject.GetComponent<Collider>().enabled = false;
 
         //pistol
-        player.GetComponent<GunManager>().SetPistolActive(false);
         player.GetComponent<Shooting>().StopAllCoroutines();
+        player.GetComponent<GunManager>().SetPistolActive(false);
+        
    }
 
    private void Drop(){
