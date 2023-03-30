@@ -25,7 +25,7 @@ public class EnemyManager : MonoBehaviour
         count++;
              
         while(true){
-            Vector3 enemySpawn = new Vector3(Random.Range(-16f,16f), 0, Random.Range(-24f, 20f));
+            Vector3 enemySpawn = new Vector3(Random.Range(-16f,16f), 4, Random.Range(-24f, 20f));
             if((enemySpawn - transform.position).magnitude < 20){
                 Debug.Log("too close");
                 continue;

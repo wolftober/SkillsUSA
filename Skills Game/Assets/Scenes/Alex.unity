@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rifle
       objectReference: {fileID: 0}
+    - target: {fileID: 7234722559170956989, guid: b49d259e3309dbd418317ec5a0870881, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b49d259e3309dbd418317ec5a0870881, type: 3}
 --- !u!1 &848720035
@@ -493,6 +497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: basicCrate
       objectReference: {fileID: 0}
+    - target: {fileID: 2638202202782291234, guid: 903a5b20241b58f4990bf1d14e2096f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2638202202782291257, guid: 903a5b20241b58f4990bf1d14e2096f1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -564,6 +572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1387147281546521494, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: m_TagString
+      value: FiringP
+      objectReference: {fileID: 0}
     - target: {fileID: 1387147281555470440, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -640,6 +652,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2253402683441760630, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: m_TagString
+      value: GunContainer
+      objectReference: {fileID: 0}
     - target: {fileID: 4246790911798242803, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: rb
       value: 
@@ -674,11 +690,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
       propertyPath: spawnTable.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: spawnTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1941469626130535415, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}
+    - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: spawnTable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1941469626130535415, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}
+    - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: spawnTable.Array.data[2]
+      value: 
+      objectReference: {fileID: 1941469626130535415, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}
+    - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: spawnTable.Array.data[3]
+      value: 
+      objectReference: {fileID: 1941469626130535415, guid: 1b499adada68cbd4ea75f80d2796085e, type: 3}
+    - target: {fileID: 7951405480968522598, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
+      propertyPath: spawnTable.Array.data[4]
+      value: 
+      objectReference: {fileID: 2638202202782291234, guid: 903a5b20241b58f4990bf1d14e2096f1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9390a1f04ca6bc7408a57a94ba813f33, type: 3}
