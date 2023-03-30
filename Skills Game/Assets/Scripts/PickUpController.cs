@@ -22,6 +22,7 @@ public class PickUpController : MonoBehaviour
 
    private void Start(){
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        gunContainer = GameObject.FindGameObjectWithTag("GunContainer").transform;
 
         //setup
         if(!equipped){

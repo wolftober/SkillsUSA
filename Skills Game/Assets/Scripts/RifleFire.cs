@@ -28,6 +28,7 @@ public class RifleFire : GenericShoot
     }
     void Start(){
         current_ammo = ammo;
+        fire_point = GameObject.FindGameObjectWithTag("FiringP").transform;
     }
     
     IEnumerator fireRate()
