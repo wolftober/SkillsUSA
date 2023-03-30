@@ -12,5 +12,7 @@ public class CrateLoot : MonoBehaviour
             Instantiate(drop, box.position,  Quaternion.identity);
             Destroy(gameObject);
         }
+        if(collision.gameObject.CompareTag("Player"))
+            Destroy(gameObject);
     }
 }
