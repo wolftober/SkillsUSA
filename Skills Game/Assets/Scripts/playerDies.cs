@@ -16,7 +16,7 @@ public class playerDies : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Crate")){
-            healthbar.GetComponent<Slider>().value -= 7;
+            healthbar.GetComponent<Slider>().value += 20;
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
