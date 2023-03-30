@@ -118,7 +118,7 @@ MonoBehaviour:
   burstTime: 0.1
   fire_point: {fileID: 0}
   bulletPrefab: {fileID: 4618473173147063516, guid: 6fad71f4c39535f45ac0190865274692, type: 3}
-  bullet_force: 20
+  bullet_force: 40
   shootingSpeed: 0.5
 --- !u!114 &7234722559170956987
 MonoBehaviour:
