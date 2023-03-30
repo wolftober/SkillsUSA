@@ -18,6 +18,7 @@ public class playerDies : MonoBehaviour
         if (collision.gameObject.CompareTag("Crate")){
             healthbar.GetComponent<Slider>().value += 20;
         }
+        
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // damage player

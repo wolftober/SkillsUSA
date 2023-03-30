@@ -105,6 +105,7 @@ public class PickUpController : MonoBehaviour
 
         //pistol
         player.GetComponent<GunManager>().SetPistolActive(true);
+        player.GetComponent<Shooting>().restart();
 
         StartCoroutine(Despawn());
    }
