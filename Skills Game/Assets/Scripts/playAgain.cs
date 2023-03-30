@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class playAgain : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class playAgain : MonoBehaviour
 
     void OnClick()
     {
+        /*
         player.SetActive(true);
         player.transform.position = new Vector3(0, 1.13f, 0);
         gameOverText.text = "";
@@ -35,5 +37,7 @@ public class playAgain : MonoBehaviour
 
         // ========= Start Spawning ==========
         EnemySpawn.GetComponent<EnemyManager>().starting();
+        */
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
