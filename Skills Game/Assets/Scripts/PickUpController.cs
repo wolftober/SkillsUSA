@@ -76,6 +76,7 @@ public class PickUpController : MonoBehaviour
 
         //pistol
         player.GetComponent<GunManager>().SetPistolActive(false);
+        player.GetComponent<Shooting>().StopAllCoroutines();
    }
 
    private void Drop(){
@@ -105,7 +106,7 @@ public class PickUpController : MonoBehaviour
 
         //pistol
         player.GetComponent<GunManager>().SetPistolActive(true);
-        player.GetComponent<Shooting>().restart();
+        
 
         StartCoroutine(Despawn());
    }

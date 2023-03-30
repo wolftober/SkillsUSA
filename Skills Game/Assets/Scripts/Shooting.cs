@@ -40,9 +40,6 @@ public class Shooting : GenericShoot
         yield return new WaitForSeconds(shootingSpeed);
         shot = false;
     }
-    public void restart(){
-        StartCoroutine(fireRate());
-    }
 
     void Update()
     {
